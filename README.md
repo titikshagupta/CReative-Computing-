@@ -30,66 +30,10 @@ Next, figure out what data your robot is attempting to collect. Your robot must 
  <h2>Backtesting and Optimization </h2>
  Backtesting focuses on validating your trading robot, which includes checking the code to ensure it is doing what you want and understanding how the strategy performs across various time frames, asset classes, and market conditions, as you'll want to maximise performance while minimising overfitting bias. You must first choose a good performance measure that captures risk and reward factors, as well as consistency, in order to maximise performance.
  
-
-TABLE OF CONTENTS
-What Is a Trading Robot?
-Algorithmic Trading Strategies
-Backtesting and Optimization
-Live Execution
-The Bottom Line
-Many traders aspire to become algorithmic traders but struggle to code their trading robots properly. These traders will often find disorganized and misleading algorithmic coding information online, as well as false promises of overnight prosperity. However, one potential source of reliable information is from Lucas Liew, creator of the online algorithmic trading course AlgoTrading101. The course has garnered over 30,000 students since its launch in 2014.1
-
-
-Liew's program focuses on presenting the fundamentals of algorithmic trading in an organized way. He is adamant about the fact that algorithmic trading is “not a get-rich-quick scheme.” Outlined below are the basics of what it takes to design, build, and maintain your own algorithmic trading robot (drawn from Liew and his course).
-
-
-KEY TAKEAWAYS
-Many aspiring algo-traders have difficulty finding the right education or guidance to properly code their trading robots.
-AlgoTrading101 is a potential source of reliable instruction and has garnered more than 30,000 since its 2014 launch.1
-A trading algo or robot is computer code that identifies buy and sell opportunities, with the ability to execute the entry and exit orders.
-In order to be profitable, the robot must identify regular and persistent market efficiencies.
-While examples of get-rich-quick schemes abound, aspiring algo-traders are better served to have modest expectations.
-
-
-0 seconds of 29 secondsVolume 75%
-This ad will end in 28
- 
-Rise of the Robo Advisors
-
-What Is a Trading Robot?
-At the most basic level, an algorithmic trading robot is a computer code that has the ability to generate and execute buy and sell signals in financial markets. The main components of such a robot include entry rules that signal when to buy or sell, exit rules indicating when to close the current position, and position sizing rules defining the quantities to buy or sell.
-
-
-Obviously, you’re going to need a computer and an internet connection to become an algorithmic trader. After that, a suitable operating system is needed to run MetaTrader 4 (MT4), which is an electronic trading platform that uses the MetaQuotes Language 4 (MQL4) for coding trading strategies.2 Although MT4 is not the only software one could use to build a robot, it has a number of significant benefits.
-
-
-One advantage is that, while MT4’s main asset class is foreign exchange (FX), the platform can also be used to trade equities, equity indices, commodities, and Bitcoin using contracts for difference (CFDs). Other benefits of using MT4 (as opposed to other platforms) are that it is easy to learn, it has numerous available FX data sources, and it’s free.
-
-
-Algorithmic Trading Strategies
-One of the first steps in developing an algorithmic strategy is to reflect on some of the core traits that every algorithmic trading strategy should have. The strategy should be market prudent in that it is fundamentally sound from a market and economic standpoint. Also, the mathematical model used in developing the strategy should be based on sound statistical methods.
-
-Next, determine what information your robot is aiming to capture. In order to have an automated strategy, your robot needs to be able to capture identifiable, persistent market inefficiencies. Algorithmic trading strategies follow a rigid set of rules that take advantage of market behavior, and the occurrence of one-time market inefficiency is not enough to build a strategy around. Further, if the cause of the market inefficiency is unidentifiable, then there will be no way to know if the success or failure of the strategy was due to chance or not.
-
-With the above in mind, there are a number of strategy types to inform the design of your algorithmic trading robot. These include strategies that take advantage of the following (or any combination thereof):
-
-Macroeconomic news (e.g., non-farm payroll or interest rate changes)
-Fundamental analysis (e.g., using revenue data or earnings release notes)
-Statistical analysis (e.g., correlation or co-integration)
-Technical analysis (e.g., moving averages)
-The market microstructure (e.g. arbitrage or trade infrastructure)
-Preliminary research focuses on developing a strategy that suits your own personal characteristics. Factors such as personal risk profile, time commitment, and trading capital are all important to think about when developing a strategy. You can then begin to identify the persistent market inefficiencies mentioned above. Having identified a market inefficiency, you can begin to code a trading robot suited to your own personal characteristics.
-
-Backtesting and Optimization
-Backtesting focuses on validating your trading robot, which includes checking the code to make sure it is doing what you want and understanding how the strategy performs over different time frames, asset classes, or market conditions, especially in so-called "black swan" events such as the 2007-2008 financial crisis.
-
-Now that you have coded a robot that works, you'll want to maximize its performance while minimizing the overfitting bias. To maximize performance, you first need to select a good performance measure that captures risk and reward elements, as well as consistency (e.g., Sharpe ratio).
-
-Meanwhile, an overfitting bias occurs when your robot is too closely based on past data; such a robot will give off the illusion of high performance, but since the future never completely resembles the past, it may actually fail. Training with more data, removing irrelevant input features, and simplifying your model may help prevent overfitting.
-
 <h2>Live Execution</h2>
 Apart from being prepared for the emotional ups and downs that you may encounter, there are a few technological issues to be handled. Selecting an acceptable broker and adopting procedures to handle both market and operational risks, such as potential hackers and technology outages, while ensuring the robot is as efficient as it was during the testing period, are among these concerns.
  
+ The most important part of algorithmic trading is <strong>“understanding under which types of market conditions your robot will work and when it will break down”</strong> and <strong>“understanding when to intervene.”</strong> Algorithmic trading can be rewarding, but the key to success is understanding. Any course or teacher promising high rewards without sufficient understanding should be a major warning sign to stay away.
  
  
  
